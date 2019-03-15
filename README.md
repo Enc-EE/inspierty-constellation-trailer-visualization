@@ -10,6 +10,7 @@ Add ?spec&fps=30 to the url to see a spectrum and have a frame rate of 30 fps.
 
 - `nos=x` -> number of stars
 - `spec` -> draw a spectrum
+- `mic` -> use the microphone input for visualization instead of the album trailer
 - `fi=x` -> uses the xth frequency of the spectrum for analysis
 - `rel` -> show relative data value which is used for analysis
 - `lb=x` -> specify the lower border at which the frequency should be evaluated (0..1)
