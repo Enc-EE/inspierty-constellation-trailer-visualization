@@ -1,6 +1,6 @@
 import { EAnimation } from "./enc/eAnimation";
 import { AudioGraph } from "./enc/audio/audioGraph";
-// import TrailerOgg from "./assets/Trailer_Constellation.ogg"
+import TrailerOgg from "./assets/Trailer_Constellation.ogg"
 import { ECanvas } from "./enc/eCanvas";
 import { InspiertyAudioVisualization } from "./inspiertyAudioVisualization";
 
@@ -16,8 +16,13 @@ export class App {
         this.animation.addUpdateFunction(this.canvas.draw);
 
         this.audioGraph = new AudioGraph();
-        // this.audioGraph.playUrl(TrailerOgg);
-        this.audioGraph.playStream();
+        if (window.location.search.substr(1).split("&").indexOf("mic") !== -1) {
+            console.log("using microphone");
+            this.audioGraph.playStream();
+        } else {
+            console.log("using audio");
+            this.audioGraph.playUrl(TrailerOgg);
+        }
 
         this.canvas.addDrawFunction(this.preAnimation);
 
