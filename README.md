@@ -2,6 +2,8 @@ Visualization of the trailer soundtrack from the album constellation of the band
 
 [See it in action](https://enc-ee.github.io/inspierty-constellation-trailer-visualization/dist/)
 
+![Screenshot](screenshot.png)
+
 ## Parameters
 You can specify some parameters to adjust sensitivity and appearance.
 Add ?spec&fps=30 to the url to see a spectrum and have a frame rate of 30 fps.
