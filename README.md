@@ -1,2 +1,1 @@
-# inspierty-constellation-trailer-visualization
-live calculated visualization of the album trailer
+Visualization of the trailer soundtrack from the album constellation of the band inspierty.
